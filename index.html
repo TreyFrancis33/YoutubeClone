@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>YouTube</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+    rel="stylesheet">
+    <link rel="stylesheet" href="css/youtube.css">
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/sidebar.css">
+    <script type="module" src="./js/yt.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <div class="left-sect">
+            <img class="bars" src="icons/header/bars.svg" alt="Bars">
+            <img class="yt-logo" src="icons/header/yt.svg" alt="YouTube Logo">
+        </div>
+        <div class="mid-sect">
+            <input class="search" type="text" placeholder="Search">
+            <button class="search-btn">
+                <img class="search-icon" src="icons/header/search.svg" alt="Search Buttom">
+                <div class="tooltips">Search</div>
+            </button>
+            <button class="voice-search">
+                <img class="voice-search-icon" src="icons/header/microphone.svg" alt="Voice Search">
+                <div class="tooltips">Search with your voice</div>
+            </button>
+        </div>
+        <div class="right-sect">
+            <div class="upload-icon-container">
+                <img class="upload-icon" src="icons/header/create.svg" alt="Upload">
+                <div class="tooltips">Create</div>
+            </div>
+            <div class="apps-icon-container">
+                <img class="apps-icon" src="icons/header/apps.svg" alt="Youtube Apps">
+                <div class="tooltips">YouTube Apps</div>
+            </div>
+            <div class="notification-container">
+                <div class="notif-container">
+                <img class="notifs-icon" src="icons/header/bell.svg" alt="Notifications">
+                <div class="tooltips">Notifications</div>
+                <div class="notif-count">3</div>
+            </div>
+            </div>
+            <img class="user-pfp" src="channelpfp/lenarr.jpg" alt="Account Profile Picture">
+        </div>
+    </header>
+
+    <nav class="sidebar">
+        <div class="sidebar-link">
+            <img src="icons/sidebar/home.svg" alt="Home Icon">
+            <div>Home</div>
+        </div>
+        <div class="sidebar-link">
+            <img src="icons/sidebar/explore.svg" alt="Explore Icon">
+            <div>Explore</div>
+        </div>
+        <div class="sidebar-link">
+            <img src="icons/sidebar/subscriptions.svg" alt="Subscriptions Icon">
+            <div>Subscriptions</div>
+        </div>
+        <div class="sidebar-link">
+            <img src="icons/sidebar/originals.svg" alt="Originals Icon">
+            <div>Originals</div>
+        </div>
+        <div class="sidebar-link">
+            <img src="icons/sidebar/youtube-music.svg" alt="YT Music Icon">
+            <div>YT Music</div>
+        </div>
+        <div class="sidebar-link">
+            <img src="icons/sidebar/library.svg" alt="Library Icon">
+            <div>Library</div>
+        </div>
+    </nav>
+    <main><section class="video-grid"></section></main>
+</body>
+</html>
